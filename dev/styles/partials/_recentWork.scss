@@ -23,8 +23,6 @@
 
 .grids{
     width: 50%;
-    // background: #5f5f5f;
-    // padding: 10px;
 }
 
 .gridContainer{
@@ -52,9 +50,8 @@
 .gridText h3{
     font-size: 2.5rem;
     font-family: $raleWay;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     text-transform: uppercase;
-    border-bottom: 3px solid red;
     display: inline-block;
 }
 
@@ -62,6 +59,7 @@
     text-align: left;
     font-size: 2rem;
     font-family: $lato;
+    margin-top: 7px;
 }
 
 .gridContainer{
