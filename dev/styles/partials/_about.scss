@@ -1,0 +1,88 @@
+// About section
+.aboutContainer{
+    display: flex;
+    position: relative;
+    padding:150px 0 150px 0;
+}
+
+.aboutContent{
+    width: 65%;
+}
+
+.aboutTitle h2{
+    font-size: 3rem;
+    font-family: $raleWay;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+
+.aboutParagraph p{
+    font-family: $lato;
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.aboutPhone{
+    align-self: center;
+}
+
+.aboutWorkLink{
+    display: inline-block;
+    margin-top: 50px;
+    background: red;
+}
+
+.aboutWorkLink a{
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    padding: 10px 30px 10px 30px;
+}
+
+.aboutPhone{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+//Media Queries
+@media (max-width : 1560px){
+    .aboutContent{
+        width: 60%;
+    }
+}
+
+@media (max-width : 1396px){
+    .aboutContent{
+        width: 55%;
+    }
+}
+
+@media (max-width : 1235px){
+    .aboutContent{
+        width: 50%;
+    }
+}
+
+@media (max-width : 1080px){
+    .aboutContent{
+        width: 40%;
+    }
+}
+
+@media (max-width : 810px){
+    .aboutPhone img{
+        width: 350px;
+    }
+}
+
+@media (max-width : 636px){
+    .aboutPhone img{
+        display: none;
+    }
+
+    .aboutContent{
+        width: 100%;
+    }
+}

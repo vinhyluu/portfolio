@@ -1,0 +1,134 @@
+// Recent Work
+.portfolioContainer{
+    padding-top: 120px;
+}
+.portfolioContent h2{
+    font-size: 3rem;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-family: $raleWay;
+}
+
+.portfolioContent p{
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: $lato;
+}
+
+.portfolioGrid ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+.grids{
+    width: 50%;
+    // background: #5f5f5f;
+    // padding: 10px;
+}
+
+.gridContainer{
+    background: #f0f0f0;
+}
+
+.gridImage img{
+    height: 590px;
+    width: 100%;
+}
+
+.gulp{
+    color: white;
+}
+
+.gridText{
+    width: 75%;
+    height: 190px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gridText h3{
+    font-size: 2.5rem;
+    font-family: $raleWay;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    display: inline-block;
+}
+
+.gridText p{
+    text-align: left;
+    font-size: 2rem;
+    font-family: $lato;
+}
+
+.gridContainer{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.gridContainer:hover{
+    z-index: 9999;
+    background: rgba(0, 0, 0, .1)
+}
+
+.gridImage{
+    position: relative;
+}
+
+.gridImage figcaption{
+    text-transform: uppercase;
+    font-family: $raleWay;
+    color: pink;
+    position: absolute;
+    padding: 20px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gridContainer:hover figcaption{
+    display: block;
+    opacity: 1;
+    color: white;
+    background: #fc1643;
+}
+
+// Media Queries
+@media(max-width : 1036px){
+    .gridText{
+        width: 85%;
+    }
+}
+
+@media(max-width : 916px){
+    .gridText{
+        width: 95%;
+    }
+}
+
+@media(max-width : 821px){
+    .grids{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .gridImage img{
+        width: 100%;
+    }
+}
+
+@media(max-width : 565px){
+    .gridImage img{
+        height: 400px;
+    }
+}
+
+@media(max-width : 411px){
+    .gridText{
+        height: 250px;
+    }
+}

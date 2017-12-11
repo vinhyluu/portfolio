@@ -1,0 +1,38 @@
+// Footer Page
+.footerBackground{
+    background: black;
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.arrowUp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+}
+
+.fa-angle-double-up::before{
+    font-size: 3rem;
+}
+
+.fa-angle-double-up{
+    padding: 10px;
+    background: red;
+    cursor: pointer;
+}
+
+.copyright{
+    margin-top: 25px;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+    color: #686868;
+    text-align: center;
+}

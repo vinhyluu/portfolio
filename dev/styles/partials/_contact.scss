@@ -1,0 +1,196 @@
+// Contact Page
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+form{
+    width: 70%;
+}
+
+.socialMedia{
+    width: 30%;
+}
+
+.socialMedia h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: $raleWay;
+    text-transform: uppercase;
+}
+
+.socialMedia p{
+    font-size: 1.8rem;
+    font-family: $lato;
+}
+
+.contactTitle h2{
+    font-size: 6rem;
+    font-family: $raleWay;
+    text-transform: uppercase;
+}
+
+.contactContainer{
+    display: flex;
+    margin-top: 70px;
+}
+
+.contactIconContainer{
+    margin-top: 30px;
+    display: flex;
+}
+
+.contactTitle p{
+    font-size: 2rem;
+    margin: 10px 0 10px 0;
+    font-family: $lato;
+}
+
+.contactTitleContainer{
+    margin-top: 110px;
+}
+
+.formTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInput{
+    margin-bottom: 20px;
+    height: auto;
+    width: 31%;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid lightgrey;
+}
+
+.contactText{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid lightgrey;
+}
+
+.formBottom{
+    margin-bottom: 20px;
+}
+
+.contactInput::placeholder, .contactText::placeholder{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.formButton{
+    border: 0;
+    background: red;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    padding: 5px 20px 5px 20px;
+    float: right;
+    font-family: $lato;
+}
+
+.socialMedia p{
+    margin-bottom: 5px;
+    font-family: $lato;
+}
+
+.fa-twitter::before, .fa-linkedin::before, .fa-github::before{
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.fa-twitter, .fa-linkedin, .fa-github{
+    display: inline-block;
+    background: #2e2e2e;
+    padding: 15px;
+}
+
+.fa-linkedin{
+    margin: 0 30px 0 30px;
+}
+
+.mailTo{
+    color: black;
+}
+
+// Media Queries
+@media(max-width : 1325px){
+    .form{
+        width: 60%;
+    }
+
+    .socialMedia{
+        width: 40%;
+    }
+}
+
+@media(max-width : 1125px){
+    .form{
+        width: 50%;
+    }
+
+.socialMedia{
+    width: 50%;
+    }
+}
+
+@media(max-width : 845px){
+    .form{
+        width: 40%;
+    }
+
+    .socialMedia{
+        width: 60%;
+    }
+}
+
+@media(max-width : 630px){
+    .form{
+        width: 30%;
+    }
+
+    .socialMedia{
+        width: 70%;
+    }
+}
+
+@media(max-width : 575px){
+    .contactContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formButton{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contactIconContainer{
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .socialMedia{
+        align-items: center;
+        text-align: center;
+    }
+    
+    form{
+        width: 100%;
+    }
+}
+
+@media(max-width : 320px){
+    .contactTitle h2{
+        font-size: 4rem;
+    }
+}
+

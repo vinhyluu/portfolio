@@ -1,0 +1,259 @@
+// Main header styling 
+.headerBackground{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.1)),url(../../images/main.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav nav ul{
+    display: flex;
+}
+
+.mainNav nav ul li{
+    margin-left: 50px;
+    font-size: 1.7rem;
+    font-family: $raleWay;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainNav a{
+    color: black;
+}
+
+.navContainer{
+    padding-top: 30px;
+}
+
+.navContainer h3{
+    font-family: $raleWay;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.mainHeaderContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainTitle h1{
+    font-family: $raleWay;
+    font-size: 9rem;
+    text-transform: uppercase;
+}
+
+.mainSubheading{
+    background: red;
+    width: 80%;
+    margin: auto;
+}
+
+.mainSubheading h3{
+    font-size: 2rem;
+    color: white;
+    padding: 10px 0 10px 0;
+    font-weight: 700;
+    font-family: $raleWay;
+    text-align: center;
+}
+
+.fa-angle-down::before{
+    font-size: 6rem;
+}
+
+.downArrowContainer{
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 70px;
+    cursor: pointer;
+}
+
+.aboutContainer{
+    display: flex;
+}
+
+.underline{
+    position: relative;
+}
+
+.underline:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.underline:hover:after{
+  width: 100%;
+  left: 0;
+  background: black;
+}
+
+//Media Queries
+@media (max-width: 869px){
+    .mainHeaderContainer{
+        width: 60%;
+    }
+
+    .mainSubheading{
+        width: 70%;
+    }
+}
+
+@media (max-width : 800px){
+
+    .mainNav{
+        position: relative;
+    }
+    .menu-toggle {
+  position: absolute;
+  padding: 0.8em;
+  top: -10px;
+  right: 0;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: black;
+  height: 3px;
+  width: 2em;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out 350ms;
+  transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.hamburger::after {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.open .hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  display: none;
+}
+
+.open .hamburger::after {
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+          transform: translateY(-1px) rotate(-90deg);
+    margin-top: 10px;
+}
+
+.mainNav nav {
+    margin: 0;
+    padding: 0;
+}
+
+.mainNav nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 40px;
+    display: none;
+}
+
+nav ul.opening {
+    display: block;
+    height: 20px;
+}
+
+nav li {
+  border-bottom: 1px solid #f6f4e2;
+}
+nav li:last-child {
+  border-bottom: none;
+}
+nav a {
+  color: #EBEBD3;
+  background: #5f5f5f;
+  display: block;
+  padding: 1.5em 4em 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 99;
+}
+
+nav a:hover,
+nav a:focus {
+  background: black;
+  color: white;
+}
+
+.underline:after{
+  background: white;
+}
+
+.underline:hover:after{
+  background: white;
+}
+
+.site-nav--icon {
+  font-size: 1.4em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+    }
+}
+
+@media (max-width: 727px){
+    .mainHeaderContainer{
+        width: 70%;
+    }
+}
+
+@media (max-width: 625px){
+    .mainHeaderContainer{
+        width: 80%;
+    }
+}
+
+@media (max-width: 549px){
+    .mainHeaderContainer{
+        width: 90%;
+    }
+}
+
+@media (max-width: 489px){
+    .mainHeaderContainer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 489px){
+    .mainTitle h1{
+        font-size: 8rem; 
+    }
+}
+
