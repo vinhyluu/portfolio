@@ -1,7 +1,10 @@
-"use strict";
+'use strict';
+
+particlesJS.load('particles-js', 'particles.json', function () {
+    console.log('callback - particles.js config loaded');
+});
 
 $(function () {
-
     $(".downArrow").click(function () {
         $('html,body').animate({
             scrollTop: $(".aboutContent").offset().top - 135

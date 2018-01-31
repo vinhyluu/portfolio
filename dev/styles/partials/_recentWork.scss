@@ -1,4 +1,7 @@
 // Recent Work
+.portfolioBackground{
+    padding-bottom: 120px;
+}
 .portfolioContainer{
     padding-top: 120px;
 }
@@ -15,23 +18,9 @@
     font-family: $lato;
 }
 
-.portfolioGrid ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 90px;
-}
-
-.grids{
-    width: 50%;
-}
-
 .gridContainer{
-    background: #f0f0f0;
-}
-
-.gridImage img{
-    height: 590px;
-    width: 100%;
+    display: flex;
+    margin-top: 70px;
 }
 
 .gulp{
@@ -39,12 +28,14 @@
 }
 
 .gridText{
-    width: 75%;
-    height: 190px;
-    margin: 0 auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.gridText p:nth-child(2){
+    // font-style: italic;
 }
 
 .gridText h3{
@@ -53,26 +44,27 @@
     margin-bottom: 4px;
     text-transform: uppercase;
     display: inline-block;
+    font-style: italic;
 }
 
 .gridText p{
-    text-align: left;
     font-size: 2rem;
     font-family: $lato;
     margin-top: 7px;
 }
 
-.gridContainer{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-}
+// .gridContainer{
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+// }
 
-.gridContainer:hover{
-    z-index: 9999;
-    background: rgba(0, 0, 0, .1)
-}
+// .gridContainer:hover{
+//     z-index: 9999;
+//     background: rgba(0, 0, 0, .1)
+// }
 
 .gridImage{
     position: relative;
+    flex-shrink: 5;
 }
 
 .gridImage figcaption{
@@ -89,11 +81,34 @@
     transition: all 0.3s;
 }
 
-.gridContainer:hover figcaption{
-    display: block;
-    opacity: 1;
+// .gridContainer:hover figcaption{
+//     display: block;
+//     opacity: 1;
+//     color: white;
+//     background: #fc1643;
+// }
+
+.liveGithub a{
+    padding: 10px;
+    margin: 10px 5px 0 0;
+    background: red;
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+    font-size: 1.5rem;
     color: white;
-    background: #fc1643;
+    text-transform: uppercase;
+}
+
+.portContainer{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.portIcons{
+    font-size: 7rem;
+    color: #5f5f5f;
+    margin-right: 5px;
 }
 
 // Media Queries

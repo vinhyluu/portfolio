@@ -1,4 +1,8 @@
 // Contact Page
+.contactBackground{
+    background: #5f5f5f;
+    padding-top: 1px;
+}
 
 .formContainer{
     display: flex;
@@ -19,17 +23,21 @@ form{
     margin-bottom: 10px;
     font-family: $raleWay;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .socialMedia p{
     font-size: 1.8rem;
     font-family: $lato;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 .contactTitle h2{
     font-size: 6rem;
     font-family: $raleWay;
     text-transform: uppercase;
+    color: white;
 }
 
 .contactContainer{
@@ -45,7 +53,9 @@ form{
 .contactTitle p{
     font-size: 2rem;
     margin: 10px 0 10px 0;
-    font-family: $lato;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 .contactTitleContainer{
@@ -89,7 +99,7 @@ form{
     text-transform: uppercase;
     color: white;
     border-radius: 0px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 5px 20px 5px 20px;
     float: right;
     font-family: $lato;
@@ -101,7 +111,7 @@ form{
 }
 
 .fa-twitter::before, .fa-linkedin::before, .fa-github::before{
-    color: white;
+    color: darkgrey;
     font-size: 4rem;
     cursor: pointer;
 }
@@ -117,7 +127,7 @@ form{
 }
 
 .mailTo{
-    color: black;
+    color: #ffffff;
 }
 
 // Media Queries
@@ -136,8 +146,8 @@ form{
         width: 50%;
     }
 
-.socialMedia{
-    width: 50%;
+    .socialMedia{
+        width: 50%;
     }
 }
 

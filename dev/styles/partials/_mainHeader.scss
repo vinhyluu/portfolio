@@ -1,11 +1,14 @@
 // Main header styling 
+#particles-js{
+    background: #808080;
+}
+
 .headerBackground{
-    background-image: url(../../images/main.jpg);
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center;
 }
 
 .navContainer{
@@ -38,7 +41,6 @@
     font-family: $raleWay;
     font-size: 2rem;
     font-weight: bold;
-    
 }
 
 .mainHeaderContainer{
@@ -79,7 +81,7 @@
     color: white;
     left: 50%;
     transform: translate(-50%, -50%);
-    bottom: 70px;
+    bottom: 40px;
     cursor: pointer;
 }
 
@@ -94,7 +96,8 @@
 .underline:after{
   content: '';
   position: absolute;
-  width: 0; height: 3px;
+  width: 0; 
+  height: 3px;
   display: block;
   margin-top: 5px;
   right: 0;
@@ -108,6 +111,7 @@
   left: 0;
   background: black;
 }
+
 
 //Media Queries
 @media (max-width: 869px){
@@ -235,6 +239,7 @@
     }
 }
 
+
 @media (max-width: 625px){
     .mainHeaderContainer{
         width: 80%;
@@ -251,17 +256,21 @@
     .mainHeaderContainer{
         width: 100%;
     }
-}
-
-@media (max-width: 489px){
+    
     .mainTitle h1{
         font-size: 8rem; 
     }
 }
 
 @media (max-width: 375px){
-    .headerBackground{
-        background-position: bottom right;
+    .mainTitle h1{
+        font-size: 7.5rem; 
+    }
+}
+
+@media (min-width: 360px) and (max-width: 640px) and (orientation: landscape){
+    .downArrowContainer{
+        display: none;
     }
 }
 

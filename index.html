@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">    
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <title>Vinh Luu | Portfolio</title>
 </head>
 <body>
-    <header class="wrapper2 headerBackground">
+    <header class="wrapper2 headerBackground" id="particles-js">
         <div class="headerContainer wrapper">
             <div class="navContainer">
                 <div>
@@ -106,96 +107,171 @@
             </div>
         </div>
 
-        <div class="portfolioGrid">
+        <div class="portfolioGrid wrapper">
             <ul>
                 <li class="grids gridImage1">
                     <div class="gridContainer">
                         <div class="gridImage">
-                            <img src="/images/photo1.jpg">
-                            <a href="http://vinhluu.ca/coursea">
-                                <figcaption>
-                                    <h3>View Project</h3>
-                                </figcaption>
-                            </a>
+                            <img src="/images/coursea1.png">
+                            <a href="http://vinhluu.ca/coursea"></a>
                         </div>
                         <div class="gridText">
                             <div>
                                 <h3>Coursea</h3>
-                                <div>
-                                    <hr>
-                                </div>
                                 <p>Converted a PSD file to a fully responsive one page static webpage.</p>
                             </div>
-                            <p>Technologies: HTML, CSS</p>
+                            <div>
+                                <ul class="portContainer">
+                                    <li><i class="devicon-html5-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-css3-plain-wordmark portIcons"></i></li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="http://vinhluu.ca/coursea/">View Live</a>
+                                <a href="https://github.com/vinhyluu/coursea">View Github</a>
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li class="grids gridImage1">
                     <div class="gridContainer">
-                        <div class="gridImage">
-                            <img src="/images/photo3.jpg">
-                            <a href="https://makeup-fun.firebaseapp.com/">
-                                <figcaption>
-                                    <h3>View Project</h3>
-                                </figcaption>
-                            </a>
-                        </div>
                         <div class="gridText">
                             <div>
                                 <h3>Caboodle</h3>
-                                <div>
-                                    <hr>
-                                </div>
                                 <p>Mock agency project that required our team to build a React application. User can search and save their favourite makeup products. </p>
                             </div>
-                            <p>Technologies: React, Firebase, Makeup API </p>
+                            <div>
+                                <ul class="portContainer">
+                                    <li><i class="devicon-html5-plain-wordmark portIcons"></i>
+                                    <li><i class="devicon-css3-plain-wordmark portIcons"></i>
+                                    <li><i class="devicon-react-original-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-javascript-plain portIcons"></i></li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="https://makeup-fun.firebaseapp.com/">View Live</a>
+                                <a href="https://github.com/vinhyluu/project6">View Github</a>
+                            </div>
+                        </div>
+                        <div class="gridImage">
+                            <img src="/images/caboodle1.png">
+                            <a href="https://makeup-fun.firebaseapp.com/"></a>
                         </div>
                     </div>
                 </li>
                 <li class="grids gridImage1">
                     <div class="gridContainer">
                         <div class="gridImage">
-                            <img src="/images/photo2.jpg">
-                            <a href="http://vinhluu.ca/inspireme">
-                                <figcaption>
-                                    <h3>View Project</h3>
-                                </figcaption>
-                            </a>
+                            <img src="/images/inspire1.png">
+                            <a href="http://vinhluu.ca/inspireme"></a>
                         </div>
                         <div class="gridText">
                             <div>
                                 <h3>InspireMe App</h3>
-                                <div>
-                                    <hr>
-                                </div>
                                 <p>API based application that allows users to search what they're inspired by and returns an inspirational quote and gifs from Giphy.</p>
                             </div>
-                            <p>Technologies: jQuery, Giphy API, FavQs API</p>
+                            <div>
+                                <ul class="portContainer">
+                                    <li><i class="devicon-html5-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-css3-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-jquery-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-javascript-plain portIcons"></i></li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="http://vinhluu.ca/inspireme/">View Live</a>
+                                <a href="https://github.com/vinhyluu/inspireme">View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="grids gridImage1">
+                    <div class="gridContainer">
+                        <div class="gridText">
+                            <div>
+                                <h3>MusicMayer</h3>
+                                <p>Solo over John Mayer backing tracks using either a piano or guitar. Developed primarily with jQuery.</p>
+                            </div>
+                            <div>
+                                <ul class="portContainer">
+                                    <li><i class="devicon-html5-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-css3-plain-wordmark portIcons"></i></li>
+                                    <li><i class="devicon-jquery-plain-wordmark portIcons"></i></li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="http://vinhluu.ca/musicmayer/index-gravity.html">View Live</a>
+                                <a href="https://github.com/vinhyluu/musicmayer">View Github</a>
+                            </div>
+                        </div>
+                        <div class="gridImage">
+                            <img src="/images/music1.png">
+                            <a href="http://vinhluu.ca/musicmayer/index-gravity.html"></a>
                         </div>
                     </div>
                 </li>
                 <li class="grids gridImage1">
                     <div class="gridContainer">
                         <div class="gridImage">
-                            <img src="/images/photo4.jpg">
-                            <a href="http://vinhluu.ca/musicmayer/index-gravity.html">
-                                <figcaption>
-                                    <h3>View Project</h3>
-                                </figcaption>
-                            </a>
+                            <img src="/images/coin1.png">
+                            <a href="http://vinhluu.ca/cryptocoin"></a>
                         </div>
                         <div class="gridText">
                             <div>
-                                <h3>MusicMayer</h3>
-                                <div>
-                                    <hr>
-                                </div>
-                                <p>jQuery application that allows users to play along and solo over John Mayer music using either a piano or guitar.</p>
+                                <h3>CryptoCoin</h3>
+                                <p>Search for cryptocurrency coin information utilizing the CrytoCompare API and Coinmarket API. Feature development ongoing. </p>
                             </div>
-                            <p>Technologies: jQuery</p>
+                            <div>
+                                <ul class="portContainer">
+                                    <li>
+                                        <i class="devicon-html5-plain-wordmark portIcons"></i>
+                                    </li>
+                                    <li>
+                                        <i class="devicon-css3-plain-wordmark portIcons"></i>
+                                    </li>
+                                    <li>
+                                        <i class="devicon-jquery-plain-wordmark portIcons"></i>
+                                    </li>
+                                    <li>
+                                        <i class="devicon-javascript-plain portIcons"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="http://vinhluu.ca/cryptocoin/">View Live</a>
+                                <a href="https://github.com/vinhyluu/crypto">View Github</a>
+                            </div>
                         </div>
                     </div>
                 </li>
+                <!-- <li class="grids gridImage1">
+                    <div class="gridContainer">
+                        <div class="gridText">
+                            <div>
+                                <h3>Seasons</h3>
+                                <p>A showcase website for my favourite clothing brands.</p>
+                            </div>
+                            <div>
+                                <ul class="portContainer">
+                                    <li>
+                                        <i class="devicon-html5-plain-wordmark portIcons"></i>
+                                    </li>
+                                    <li>
+                                        <i class="devicon-css3-plain-wordmark portIcons"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="liveGithub">
+                                <a href="">View Live</a>
+                                <a href="">View Github</a>
+                            </div>
+                        </div>
+                        <div class="gridImage">
+                            <img src="/images/seasons1.png">
+                            <a href="http://vinhluu.ca/seasons"></a>
+                        </div>
+                    </div>
+                </li> -->
             </ul>
         </div>
     </section>
@@ -234,23 +310,23 @@
                 </div>
             </div>
 
-            <form action="https://formspree.io/vinhluu16@gmail.com" method="POST">
+            <form action="https://formspree.io/vinh@vinhluu.ca" method="POST">
                 <div class="formContainer">
                     <div class="formTop">
                         <label for="name" class="sr-only">What is your name?</label>
-                        <input type="text" id="name" placeholder="Name*" class="contactInput" name="fullName">
+                        <input type="text" id="name" placeholder="Name*" class="contactInput" name="fullName" required>
 
                         <label for="email" class="sr-only">What is your email?</label>
-                        <input type="text" id="email" placeholder="Email*" class="contactInput" name="emailAddress">
+                        <input type="text" id="email" placeholder="Email*" class="contactInput" name="emailAddress" required>
 
                         <label for="phone" class="sr-only">What is your phone number?</label>
-                        <input type="text" id="phone" placeholder="Phone*" class="contactInput" name="phoneNumber">
+                        <input type="text" id="phone" placeholder="Phone*" class="contactInput" name="phoneNumber" required>
                     </div>
 
                     
                     <div class="formBottom">
                         <label for="message"></label>
-                        <textarea name="message" id="message" placeholder="Type your message here*" class="contactText" name="fullMessage"></textarea>
+                        <textarea name="message" id="message" placeholder="Type your message here*" class="contactText" name="fullMessage" required></textarea>
                     </div>
 
                     <div>
@@ -273,8 +349,10 @@
         </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://use.fontawesome.com/863f28bd20.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="/public/scripts/main.js"></script>
+    
 </body>
 </html>
