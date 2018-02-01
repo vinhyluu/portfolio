@@ -4,6 +4,20 @@ particlesJS.load('particles-js', 'particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
 
+var navCollapse = function navCollapse() {
+    var windowSize = $(window).width();
+    var minWindow = 670;
+
+    if (windowSize <= minWindow) {
+        $('a[href^="#"]').on('click', function () {
+            console.log("clicked");
+            $('input[type="checkbox"]').prop('checked', false);
+        });
+    }
+};
+
+navCollapse();
+
 $("nav ul li").click(function () {
     $("nav").toggleClass("close");
 });
