@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">    
     <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
@@ -13,18 +14,17 @@
 <body>
     <header class="wrapper2 headerBackground" id="particles-js">
         <div class="headerContainer wrapper">
+            <label for="toggle" class="toggleMe">
+                <i class="fa fa-bars"></i> Menu</label> 
             <div class="navContainer">
                 <div>
                     <h3>VL</h3>
                 </div>
 
                 <div class="mainNav">
-                    <nav class="site-nav">
-                        <div class="menu-toggle">
-                            <div class="hamburger"></div>
-                        </div>
-
-                        <ul class="open desktop">
+                    <nav class="navLeft">
+                        <input type="checkbox" class="toggleMe" id="toggle" name="toggle">
+                        <ul class="nav">
                             <li><a href="#" class="aboutLink underline">About</a></li>
                             <li><a href="#" class="skillsLink underline">Skills</a></li>
                             <li><a href="#" class="portfolioLink underline">Portfolio</a></li>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                 </li>
-                <!-- <li class="grids gridImage1">
+                <li class="grids gridImage1">
                     <div class="gridContainer">
                         <div class="gridText">
                             <div>
@@ -262,8 +262,8 @@
                                 </ul>
                             </div>
                             <div class="liveGithub">
-                                <a href="">View Live</a>
-                                <a href="">View Github</a>
+                                <a href="http://vinhluu.ca/seasons/">View Live</a>
+                                <a href="https://github.com/vinhyluu/seasons">View Github</a>
                             </div>
                         </div>
                         <div class="gridImage">
@@ -271,7 +271,7 @@
                             <a href="http://vinhluu.ca/seasons"></a>
                         </div>
                     </div>
-                </li> -->
+                </li>
             </ul>
         </div>
     </section>

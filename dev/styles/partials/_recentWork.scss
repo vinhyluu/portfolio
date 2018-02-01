@@ -34,10 +34,6 @@
     justify-content: center;
 }
 
-.gridText p:nth-child(2){
-    // font-style: italic;
-}
-
 .gridText h3{
     font-size: 2.5rem;
     font-family: $raleWay;
@@ -52,15 +48,6 @@
     font-family: $lato;
     margin-top: 7px;
 }
-
-// .gridContainer{
-//     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-// }
-
-// .gridContainer:hover{
-//     z-index: 9999;
-//     background: rgba(0, 0, 0, .1)
-// }
 
 .gridImage{
     position: relative;
@@ -80,13 +67,6 @@
     opacity: 0;
     transition: all 0.3s;
 }
-
-// .gridContainer:hover figcaption{
-//     display: block;
-//     opacity: 1;
-//     color: white;
-//     background: #fc1643;
-// }
 
 .liveGithub a{
     padding: 10px;
@@ -112,36 +92,12 @@
 }
 
 // Media Queries
-@media(max-width : 1036px){
-    .gridText{
-        width: 85%;
+@media (max-width: 828px){
+    .gridContainer{
+        flex-direction: column;
     }
-}
-
-@media(max-width : 916px){
     .gridText{
-        width: 95%;
-    }
-}
-
-@media(max-width : 821px){
-    .grids{
         width: 100%;
-        margin-bottom: 40px;
-    }
-    .gridImage img{
-        width: 100%;
-    }
-}
-
-@media(max-width : 565px){
-    .gridImage img{
-        height: 400px;
-    }
-}
-
-@media(max-width : 411px){
-    .gridText{
-        height: 250px;
+        order: 2;
     }
 }

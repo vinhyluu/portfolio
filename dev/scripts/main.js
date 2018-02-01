@@ -3,6 +3,10 @@ particlesJS.load('particles-js',
         console.log('callback - particles.js config loaded');
 });
 
+$("nav ul li").click(function () {
+    $("nav").toggleClass("close");
+});
+
 $(function () {
     $(".downArrow").click(function () {
         $('html,body').animate({
