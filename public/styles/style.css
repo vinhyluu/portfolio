@@ -230,8 +230,8 @@ hr {
 
 .navContainer h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  font-weight: bold; }
+  font-size: 5rem;
+  font-weight: 700; }
 
 .mainHeaderContainer {
   position: absolute;
@@ -287,14 +287,14 @@ hr {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: red;
+  background: black;
   transition: width .2s ease;
   -webkit-transition: width .2s ease; }
 
 .underline:hover:after {
   width: 100%;
   left: 0;
-  background: red; }
+  background: black; }
 
 @media (max-width: 869px) {
   .mainHeaderContainer {
@@ -314,10 +314,10 @@ hr {
     position: fixed; }
   label[for="toggle"] {
     position: fixed;
-    top: 30px;
-    right: 40px;
+    top: 45px;
+    right: 50px;
     color: black;
-    font-size: 1.8rem; }
+    font-size: 2.7rem; }
   .nav {
     background: white;
     color: white;
@@ -352,6 +352,10 @@ hr {
 @media (max-width: 727px) {
   .mainHeaderContainer {
     width: 70%; } }
+
+@media (max-width: 705px) {
+  label[for="toggle"] {
+    right: 20px; } }
 
 @media (max-width: 625px) {
   .mainHeaderContainer {
