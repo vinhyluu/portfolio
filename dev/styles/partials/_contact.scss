@@ -110,13 +110,13 @@ form{
     font-family: $lato;
 }
 
-.fa-twitter::before, .fa-linkedin::before, .fa-github::before{
+.fa-instagram::before, .fa-linkedin::before, .fa-github::before{
     color: darkgrey;
     font-size: 4rem;
     cursor: pointer;
 }
 
-.fa-twitter, .fa-linkedin, .fa-github{
+.fa-instagram, .fa-linkedin, .fa-github{
     display: inline-block;
     background: #2e2e2e;
     padding: 15px;
